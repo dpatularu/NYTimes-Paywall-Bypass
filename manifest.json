@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "NY Times Paywall Remover",
+  "version": "1.0",
+
+  "description": "Removes the paywalls from NY Times website.",
+
+  "icons": {
+    "48": "icons/logo-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.nytimes.com/*"],
+      "js": ["modalremover.js"]
+    }
+  ]
+}
